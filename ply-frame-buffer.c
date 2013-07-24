@@ -47,41 +47,6 @@
 #define PLY_FRAME_BUFFER_DEFAULT_FB_DEVICE_NAME "/dev/fb0"
 #endif
 
-struct _ply_frame_buffer
-{
-  char *device_name;
-  int   device_fd;
-
-  char *map_address;
-  size_t size;
-
-  uint32_t *shadow_buffer;
-
-  uint32_t red_bit_position;
-  uint32_t green_bit_position;
-  uint32_t blue_bit_position;
-  uint32_t alpha_bit_position;
-
-  uint32_t bits_for_red;
-  uint32_t bits_for_green;
-  uint32_t bits_for_blue;
-  uint32_t bits_for_alpha;
-
-  int32_t dither_red;
-  int32_t dither_green;
-  int32_t dither_blue;
-
-  unsigned int bytes_per_pixel;
-  unsigned int row_stride;
-
-  ply_frame_buffer_area_t area;
-  ply_frame_buffer_area_t area_to_flush;
-
-  void (*flush)(ply_frame_buffer_t *buffer);
-
-  int pause_count;
-};
-
 static bool ply_frame_buffer_open_device (ply_frame_buffer_t  *buffer);
 static void ply_frame_buffer_close_device (ply_frame_buffer_t *buffer);
 static bool ply_frame_buffer_query_device (ply_frame_buffer_t *buffer);

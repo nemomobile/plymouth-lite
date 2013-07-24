@@ -43,6 +43,7 @@
 #include <png.h>
 
 #include <linux/fb.h>
+#include "ply-frame-buffer.h"
 
 #define MIN(a,b) ((a) <= (b)? (a) : (b))
 #define MAX(a,b) ((a) >= (b)? (a) : (b))
@@ -463,6 +464,8 @@ main (int    argc,
       perror ("could not open framebuffer");
       return exit_code;
     }
+
+  image = ply_image_resize(image, buffer->area.width, buffer->area.height);
 
   animate_at_time (buffer, image);
 

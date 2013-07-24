@@ -19,7 +19,6 @@ Source1:    %{name}-start.service
 Source2:    %{name}-halt.service
 Source3:    %{name}-reboot.service
 Source4:    %{name}-poweroff.service
-Source100:  plymouth-lite.yaml
 Requires:   boot-splash-screen
 Requires:   systemd
 Requires(preun): systemd

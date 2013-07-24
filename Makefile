@@ -1,6 +1,6 @@
 
 ply-image: ply-image.c ply-frame-buffer.c Makefile
-	gcc -O2 -march=core2 -mtune=generic -lm `pkg-config --cflags libpng12` `pkg-config --libs libpng12` ply-image.c ply-frame-buffer.c -o ply-image
+	gcc -O2 -march=core2 -mtune=generic `pkg-config --cflags libpng12`  ply-image.c ply-frame-buffer.c -o ply-image  -lm `pkg-config --libs libpng12`
 	
 clean:
 	rm -f ply-image *~ gmon.out

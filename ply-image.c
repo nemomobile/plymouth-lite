@@ -439,7 +439,7 @@ main (int    argc,
 
   exit_code = 0;
 
-//  hide_cursor ();
+  hide_cursor ();
 
   if (argc == 1)
     image = ply_image_new ("/usr/share/plymouth/splash.png");

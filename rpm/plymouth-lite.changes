@@ -1,6 +1,6 @@
 * Wed Jan 09 2013 Maciej Blomberg <maciej.blomberg@jollamobile.com> - 0.6.0
 - Changed dependency.
-  
+
 * Mon Dec 10 2012 Marko Saukko <marko.saukko@jollamobile.com> - 0.6.0
 - Updated packaging.
 
@@ -25,7 +25,7 @@
 * Fri Feb 05 2010 Anas Nashif <anas.nashif@intel.com> - 0.6.0
 - Move backgrounds to moblin-generic-backgrounds
 
-* Thu Jan 07 2010 Vivian Zhang <vivian.zhang@intel.com> 0.6.0
+* Thu Jan 07 2010 Vivian Zhang <vivian.zhang@intel.com> - 0.6.0
 - Refresh the splash.png to clean libpng warning on startup, partially fixed MB #8946
 
 * Wed Jul 22 2009 - Arjan van de Ven <arjan@linux.intel.com> - 0.6.0
